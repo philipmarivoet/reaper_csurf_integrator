@@ -1,0 +1,20 @@
+﻿  control_surface_integrator.cpp
+d:\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(303): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+d:\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(188): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  control_surface_integrator_ui.cpp
+d:\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(303): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(84): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(86): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(93): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(104): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(126): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(127): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(128): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(129): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+..\..\..\reaper_csurf_integrator\control_surface_integrator_ui.cpp(153): warning C4244: 'argument': conversion from 'WPARAM' to 'int', possible loss of data
+  main.cpp
+     Creating library D:\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.lib and object D:\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.exp
+  Generating code
+  All 1425 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  reaper_csurf_integrator.vcxproj -> D:\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.dll

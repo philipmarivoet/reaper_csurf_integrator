@@ -1,0 +1,9 @@
+﻿  control_surface_integrator.cpp
+..\..\..\reaper_csurf_integrator\control_surface_integrator.cpp(625): warning C4018: '<': signed/unsigned mismatch
+  control_surface_integrator_ui.cpp
+  main.cpp
+     Creating library D:\reaper_csurf_integrator\Windows\reaper_csurf_integrator\Release\reaper_csurf_integrator.lib and object D:\reaper_csurf_integrator\Windows\reaper_csurf_integrator\Release\reaper_csurf_integrator.exp
+  Generating code
+  All 1425 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  reaper_csurf_integrator.vcxproj -> D:\reaper_csurf_integrator\Windows\reaper_csurf_integrator\Release\reaper_csurf_integrator.dll
