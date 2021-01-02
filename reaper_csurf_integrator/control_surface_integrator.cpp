@@ -765,8 +765,9 @@ void Manager::InitActionsDictionary()
     actions_["EuConTimeDisplay"] =                  new EuConTimeDisplay();
     actions_["NoAction"] =                          new NoAction();
     actions_["Reaper"] =                            new ReaperAction();
-    actions_["FixedTextDisplay"] =                  new FixedTextDisplay(); ;
+    actions_["FixedTextDisplay"] =                  new FixedTextDisplay();
     actions_["FixedRGBColourDisplay"] =             new FixedRGBColourDisplay();
+    actions_["FixedValue"] =                        new FixedValue();
     actions_["Rewind"] =                            new Rewind();
     actions_["FastForward"] =                       new FastForward();
     actions_["Play"] =                              new Play();
