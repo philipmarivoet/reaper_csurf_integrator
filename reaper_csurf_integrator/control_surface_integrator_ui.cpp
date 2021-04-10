@@ -775,7 +775,14 @@ static WDL_DLGRET dlgProcMainConfig(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPAR
                 switch(LOWORD(wParam))
                 {
                     case IDC_LIST_Pages:
-                        if (HIWORD(wParam) == LBN_SELCHANGE)
+                        if (HIWORD(wParam) == LBN_DBLCLK)
+                        {
+#ifdef WIN32
+                            // pretend we clicked the Edit button
+                            SendMessage(GetDlgItem(hwndDlg, IDC_BUTTON_EditPage), BM_CLICK, 0, 0);
+#endif
+                        }                       
+                        else if (HIWORD(wParam) == LBN_SELCHANGE)
                         {
                             int index = SendDlgItemMessage(hwndDlg, IDC_LIST_Pages, LB_GETCURSEL, 0, 0);
                             if (index >= 0)
@@ -783,8 +790,8 @@ static WDL_DLGRET dlgProcMainConfig(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPAR
                                 SendMessage(GetDlgItem(hwndDlg, IDC_LIST_Surfaces), LB_RESETCONTENT, 0, 0);
 
                                 pageIndex = index;
-                                
-                                for(auto* surface : pages[index]->surfaces)
+
+                                for (auto* surface : pages[index]->surfaces)
                                     AddListEntry(hwndDlg, surface->name, IDC_LIST_Surfaces);
                             }
                             else
@@ -793,7 +800,17 @@ static WDL_DLGRET dlgProcMainConfig(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPAR
                             }
                         }
                         break;
-                        
+
+                    case IDC_LIST_Surfaces:
+                        if (HIWORD(wParam) == LBN_DBLCLK)
+                        {
+#ifdef WIN32
+                            // pretend we clicked the Edit button
+                            SendMessage(GetDlgItem(hwndDlg, IDC_BUTTON_EditSurface), BM_CLICK, 0, 0);
+#endif
+                        }
+                        break;
+
                     case IDC_BUTTON_AddPage:
                         if (HIWORD(wParam) == BN_CLICKED)
                         {
@@ -1137,8 +1154,11 @@ static WDL_DLGRET dlgProcMainConfig(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPAR
                 }
             }
             
-            SendMessage(GetDlgItem(hwndDlg, IDC_LIST_Surfaces), LB_SETCURSEL, 0, 0);
             SendMessage(GetDlgItem(hwndDlg, IDC_LIST_Pages), LB_SETCURSEL, 0, 0);
+            SendMessage(GetDlgItem(hwndDlg, IDC_LIST_Surfaces), LB_SETCURSEL, 0, 0);
+
+            // the messages above don't trigger the user-initiated code, so pretend the user selected them
+            SendMessage(hwndDlg, WM_COMMAND, MAKEWPARAM(IDC_LIST_Pages, LBN_SELCHANGE), 0);
         }
         break;
         
