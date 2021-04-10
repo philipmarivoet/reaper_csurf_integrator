@@ -841,6 +841,8 @@ void Manager::InitActionsDictionary()
     actions_["EuConTrackSendPanDisplay"] =          new EuConTrackSendPanDisplay();
     actions_["TrackSendPrePostDisplay"] =           new TrackSendPrePostDisplay();
     actions_["EuConTrackSendPrePostDisplay"] =      new EuConTrackSendPrePostDisplay();
+    actions_["TrackFilter"] =                       new TrackFilter();
+    actions_["TrackScroll"] =                       new TrackScroll();
 }
 
 void Manager::Init()
@@ -1079,6 +1081,24 @@ void TrackNavigationManager::AdjustTrackBank(int amount)
     int top = numTracks - navigators_.size();
     
     if(trackOffset_ >  top)
+        trackOffset_ = top;
+}
+
+void TrackNavigationManager::SetTrackBank(int offset)
+{
+    int numTracks = GetNumTracks();
+
+    if (numTracks <= navigators_.size())
+        return;
+
+    trackOffset_ = offset;
+
+    if (trackOffset_ < 0)
+        trackOffset_ = 0;
+
+    int top = numTracks - navigators_.size();
+
+    if (trackOffset_ > top)
         trackOffset_ = top;
 }
 

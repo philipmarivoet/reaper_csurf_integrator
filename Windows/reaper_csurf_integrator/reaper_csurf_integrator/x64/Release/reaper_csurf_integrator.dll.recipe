@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.dll</FullPath>
+      <FullPath>D:\dev\projects\github\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

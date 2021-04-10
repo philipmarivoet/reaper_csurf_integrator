@@ -1468,19 +1468,6 @@ public:
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-class FixedValue : public Action
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-{
-public:
-    virtual string GetName() override { return "FixedValue"; }
-
-    virtual void RequestUpdate(ActionContext* context) override
-    {
-        context->UpdateWidgetValue(context->GetIntParam());
-    }
-};
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 class FixedRGBColourDisplay : public Action
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 {
@@ -2287,5 +2274,97 @@ public:
             context->ClearWidget();
     }
 };
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class FixedValue : public Action
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+public:
+    virtual string GetName() override { return "FixedValue"; }
+
+    virtual void RequestUpdate(ActionContext* context) override
+    {
+        context->UpdateWidgetValue(context->GetIntParam());
+    }
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class TrackFilter : public Action
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+public:
+    virtual string GetName() override { return "TrackFilter"; }
+
+    virtual void Do(ActionContext* context, double value) override
+    {
+        if (value == 0.0) return; // ignore button releases
+
+        string filter = context->GetStringParam();
+        regex matcher = regex(filter);
+
+        int trackCount = DAW::CSurf_NumTracks(false);
+        int folderDepth = 0;
+        bool show = false;
+
+        for (int trackNumber = 1; trackNumber <= trackCount; trackNumber++)
+        {
+            MediaTrack* currentTrack = DAW::CSurf_TrackFromID(trackNumber, false);
+
+            if (currentTrack == nullptr)
+                continue;
+
+            char* name = (char*)DAW::GetSetMediaTrackInfo(currentTrack, "P_NAME", NULL);
+            string trackName = string(name);
+
+            if (folderDepth == 0) {
+                show = regex_match(trackName, matcher);
+            }
+
+            double folderDepthDelta = DAW::GetMediaTrackInfo_Value(currentTrack, "I_FOLDERDEPTH");
+
+            folderDepth += (int)folderDepthDelta;
+
+            DAW::GetSetMediaTrackInfo(currentTrack, "B_SHOWINMIXER", &show);
+        }
+
+        ::TrackList_AdjustWindows(false);
+    }
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class TrackScroll : public Action
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+public:
+    virtual string GetName() override { return "TrackScroll"; }
+
+    virtual void Do(ActionContext* context, double value) override
+    {
+        if (value == 0.0) return; // ignore button releases
+
+        string filter = context->GetStringParam();
+        regex matcher = regex(filter);
+
+        int trackCount = context->GetTrackNavigationManager()->GetNumTracks();
+
+        for (int trackNumber = 1; trackNumber <= trackCount; trackNumber++)
+        {
+            MediaTrack* currentTrack = context->GetTrackNavigationManager()->GetTrackFromId(trackNumber);
+
+            if (currentTrack == nullptr)
+                continue;
+
+            char* name = (char*)DAW::GetSetMediaTrackInfo(currentTrack, "P_NAME", NULL);
+            string trackName = string(name);
+
+
+            if(regex_match(trackName, matcher)) {
+                TheManager->SetTrackBank(context->GetPage(), trackNumber - 1);
+                break;
+            }
+        }
+    }
+};
+
 
 #endif /* control_surface_Reaper_actions_h */

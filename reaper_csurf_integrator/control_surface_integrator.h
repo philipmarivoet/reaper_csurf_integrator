@@ -1678,6 +1678,7 @@ public:
     void ForceScrollLink();
     void OnTrackSelectionBySurface(MediaTrack* track);
     void AdjustTrackBank(int amount);
+    void SetTrackBank(int offset);
 
     void IncChannelBias(MediaTrack* track, int channelNum)
     {
@@ -2368,7 +2369,20 @@ public:
                 if(page->GetTrackNavigationManager()->GetSynchPages())
                     page->GetTrackNavigationManager()->AdjustTrackBank(amount);
     }
-    
+
+    void SetTrackBank(Page* sendingPage, int offset)
+    {
+        if (!sendingPage->GetTrackNavigationManager()->GetSynchPages()) {
+            sendingPage->GetTrackNavigationManager()->SetTrackBank(offset);
+        } else {
+            for (auto page : pages_)
+                if (page->GetTrackNavigationManager()->GetSynchPages()) {
+                    page->GetTrackNavigationManager()->SetTrackBank(offset);
+                    offset += page->GetTrackNavigationManager()->GetNumTracks();
+                }
+        }
+    }
+
     void NextPage()
     {
         if(pages_.size() > 0)

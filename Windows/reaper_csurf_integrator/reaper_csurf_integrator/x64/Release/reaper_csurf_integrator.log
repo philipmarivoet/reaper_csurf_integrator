@@ -1,35 +1,56 @@
-﻿  control_surface_integrator_ui.cpp
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\udp.hh(348,22): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(359,58): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(1780,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(1823,21): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(247,10): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(406,47): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(423,27): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(427,36): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(472,43): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(501,46): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(503,56): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(504,62): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(506,57): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(547,47): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(567,27): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(571,36): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(617,43): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(700,27): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(712,27): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(785,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(834,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(865,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(897,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(925,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(957,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(1004,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator_ui.cpp(1021,39): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
-     Creating library C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.lib and object C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.exp
+﻿  control_surface_integrator.cpp
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\udp.hh(348,22): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(359,58): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(1781,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.h(1824,21): warning C4834: discarding return value of function with 'nodiscard' attribute
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(517,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(523,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(548,111): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(553,112): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(597,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(618,117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(623,118): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(655,123): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(660,124): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(686,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(703,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(739,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(796,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(906,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(977,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_midi_widgets.h(1045,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_Reaper_actions.h(1074,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_Reaper_actions.h(1120,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(352,23): warning C4101: 'e': unreferenced local variable
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(425,53): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(440,57): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(519,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(736,23): warning C4101: 'e': unreferenced local variable
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(939,23): warning C4101: 'e': unreferenced local variable
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1050,54): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1081,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1103,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1446,60): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1474,134): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1485,60): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1505,136): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(1965,23): warning C4101: 'e': unreferenced local variable
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(2123,44): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(2347,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(2348,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\dev\projects\github\reaper_csurf_integrator\reaper_csurf_integrator\control_surface_integrator.cpp(2350,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     Creating library D:\dev\projects\github\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.lib and object D:\dev\projects\github\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.exp
   Generating code
-  0 of 5079 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  2 of 5096 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    31 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  reaper_csurf_integrator.vcxproj -> C:\Users\geoffwaddington\Desktop\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.dll
+  reaper_csurf_integrator.vcxproj -> D:\dev\projects\github\reaper_csurf_integrator\Windows\reaper_csurf_integrator\x64\Release\reaper_csurf_integrator.dll
